@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>my work</title>
+    <link rel="stylesheet" href="css/stl.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <br<br>
+      <div id="Home">
+        <video autoplay muted loop id="Typing_Video">
+            <source src="images/video/Typing.mp4" type="video/mp4">
+            <!--Display message if video fails to run-->
+            Your browser does not support HTML5 video.
+        </video>
+    </div>
+    <!--Video text-->
+    <div class="Video_Text">
+        <h1 class="white-text">Gashema Kalisa's Portfolio</h1>
+        <strong>
+            <p class="center">
+                <q>Whether you want to uncover the secrets of the universe, .
+                    <br>or you just want to pursue a career in the 21st century
+                    <br>basic computer programming is an essential skill to learn.
+                </q>
+                <br> -Stephen Hawking
+                <br>
+                <br> My name is Gashema Kalisa . Welcome to my portfolio website. On it, I will tell you about my background and experience.
+                <br>
+                <br> Many thanks and enjoy! 
+            </p>
+        </strong>
+    </div>
+
+<br>
+<br>
+<!-- Slideshow section added -->
+<div id="Slideshow">
+    <div id="Slideshow_Background"> 
+        <div id="Slideshow_Container">
+            <!-- Slide 1 of 6 -->
+            <div class="mySlides fade">
+                <img class="Slideshow_Images" src="images/me.png" alt="Picture of myself">
+                <div class="text">I'm here to work with you!</div>
+            </div>
+            <!-- Slide 2 of 6 -->
+            <div class="mySlides fade">
+                <img class="Slideshow_Images" src="images/Html_Css_JS.png" alt="HTML, CSS, and JS logos"> 
+                <div class="text">I am a full-stack software developer,<br> trained in:<br>HTML, CSS, JavaScript,</div>
+            </div>
+           
+            <!-- Slide 3 of 6 -->
+            <div class="mySlides fade">
+                <img class="Slideshow_Images" src="images/Sql.png" alt="SQL logo"> 
+                <div class="text">databases and SQL. verysoon</div>
+            </div>
+            <!-- Slide 4 of 6 -->
+            <div class="mySlides fade">
+                <img class="Slideshow_Images" src="images/succ.jpg" alt="quotes pic"> 
+                <div class="text">Success need trials.</div>
+            </div>
+            <!-- Previous and next buttons -->
+            <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br> <!-- Adds a space between the slideshow images and the dots -->
+
+        <!-- Slideshow dots (these are another way for users to navigate through the slideshow) -->
+        <div style="text-align: center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(4)"></span> 
+
+        </div>
+    </div>
+</div>
+<section class="row1">
+
+<section id="about">
+    <div class="row">
+
+        <div class="column">
+            <img src="images/codes.jpg" alt="praying_region" class="image_left" >
+            
+        </div>
+        <div class="colum" style="background-color:#bbb;">
+          <h1>About</h1>
+          <p>
+         I am a software developer who loves to code! As a father of two, I enjoy watching europen football. 
+         <br>
+         <br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Software Developer Boot Camp, 
+             I love software developer as the one who has background of coding,
+             <p>
+             when I was at secondary school I was among the developer team who introduce first school website <a href="https://mulinditvet.ac.rw/developers"> view</a> where 
+             I took my secondary school certificate in my form country 
+             </p>
+             <p>and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, C# and more. 
+             <br>
+             <br>I am a full-stack developer and would love to work with you on your project. <a href="#Contact">Contact</a> me below!
+     </p>
+        </div>
+      </div>
+    
+    </section>
+<br>
+    <!--LAST SECTION-->
+     <!-- Contact form -->
+     <button class="open-button" onclick="openForm()" style="font-size: 2vw; background-color: aquamarine; margin-left: 85%;">Contact form</button>
+     <div id="Contact">
+        
+        <div class="form-popup" id="myForm">
+             <form action="https://formspree.io/info@learncodinganywhere.com" method="POST" class="form-container"> <!-- Here we are using a free online service from https://formspree.io/ to send our contact form to an email address of our choosing - note: it will not run unless live on the internet, you have to push it to your online website first -->
+                 <h1>Contact</h1>
+                 <label for="name"><b>Name</b></label>
+                   <input type="text" placeholder="Type your name here" name="name" required>
+                 <label for="phone"><b>Phone</b></label>
+                   <input type="text" placeholder="Type your phone number here" name="phone">
+                 <label for="email"><b>Email</b></label>     
+                   <input type="text" placeholder="Type your email address here" name="email" required>
+                 <label for="message"><b>Message</b></label>
+                   <input type="text" placeholder="Type your message here" name="message">
+      
+                 <button type="submit" class="btn" style="font-size: 20px; color: darkcyan; background-color: darkmagenta;">send</button>
+                 <button type="button" class="btn cancel" onclick="closeForm()" style="font-size: 20px; color: whitesmoke; background-color: orange;">CLOSE</button>
+             </form>
+        </div>
+     </div>
+        <footer>
+            <p class="g">Gashema Kalisa &nbsp;&nbsp;&copy;2023</p>
+        </footer>
+        <script src="JS/javaScrip.js"></script>
+</body>
+</html>
